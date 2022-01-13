@@ -25,11 +25,25 @@ run `npm init -y`
 
 CRUD is identical for games and people.
 
-router.get('/game', read)
-router.get('/game/:id', read)
-router.post('/game', create)
-router.patch('/game/:id', update)
-router.delete('/game/:id', remove)
+**Games**
+
+- router.get('/game', read)
+- router.get('/game/:id', read)
+- router.post('/game', create)
+- router.patch('/game/:id', update)
+- router.delete('/game/:id', remove)
+
+**People**
+
+- router.get('/people', read)
+- router.get('/people/:id', read)
+- router.post('/people', create)
+- router.patch('/people/:id', update)
+- router.delete('/people/:id', remove)
+
+
+**Special Use Only**
+
 router.delete('/removeallgames', removeallgames) // for testing only modify the 92 to delete the IDs. 
 
 I'll eventually get the logic do delete anything on the DB, but it's not necessary now.
@@ -38,18 +52,19 @@ I'll eventually get the logic do delete anything on the DB, but it's not necessa
 
 GitHubRepository
 
-https://github.com/ryanyinlee/express-server-deployment
-
+https://github.com/ryanyinlee/basic-api-server
 
 Dev Branch:
 
-https://ryanlee-server-deploy-dev.herokuapp.com/
+https://ryanlee-basic-api-server.herokuapp.com/
 
-Main/Production:
+Main/Production - Due to Heroku limitations this hasn't been used. Just running dev.
 
-https://ryanlee-server-deploy-prod.herokuapp.com/
+https://ryanlee-basic-api-server.herokuapp.com/
 
 
-## 1/10/21 Pull Request
+## UML
 
-https://github.com/ryanyinlee/express-server-deployment/pull/3
+Need more UML help, here's what I got so far.
+
+![](lab03UML.PNG)
