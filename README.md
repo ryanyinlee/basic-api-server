@@ -25,17 +25,21 @@ run `npm init -y`
 
 CRUD is identical for games and people.
 
-router.get('/game', read)
-router.get('/game/:id', read)
-router.post('/game', create)
-router.patch('/game/:id', update)
-router.delete('/game/:id', remove)
+**Games**
 
-router.get('/people', read)
-router.get('/people/:id', read)
-router.post('/people', create)
-router.patch('/people/:id', update)
-router.delete('/people/:id', remove)
+- router.get('/game', read)
+- router.get('/game/:id', read)
+- router.post('/game', create)
+- router.patch('/game/:id', update)
+- router.delete('/game/:id', remove)
+
+**People**
+
+- router.get('/people', read)
+- router.get('/people/:id', read)
+- router.post('/people', create)
+- router.patch('/people/:id', update)
+- router.delete('/people/:id', remove)
 
 
 **Special Use Only**
