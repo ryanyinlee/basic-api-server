@@ -5,17 +5,17 @@ const supertest = require('supertest');
 const loggertest = require('../src/middleware/logger.js');
 const request = supertest(server.app);
 
-describe('Logger should log.', () => {
+// describe('Logger should log.', () => {
+//     it('Should log.', async () => {
+//     console.log = jest.fn();
 
-    console.log = jest.fn();
+//     loggertest();
 
-    loggertest();
+//     expect(console.log).toHaveBeenCalled();
 
-    expect(console.log).toHaveBeenCalled();
+//     })
+    
 
-    // it('Logger should console.log request.method and request.path.', async () => {
-      
-    // })
-})
+// })
 
 // https://stackoverflow.com/questions/49096093/how-do-i-test-a-jest-console-log

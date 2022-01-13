@@ -2,8 +2,7 @@
 
 function logger(request, response, next) {
 
-    console.log("Request path: " + request.path);
-    console.log("Request method: " +  request.method);
+    console.log("Request " + request);    
     
     next();
 }
